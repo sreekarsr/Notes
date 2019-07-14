@@ -1,4 +1,4 @@
-# Notes - Master Machine Learning Algorithms, Jason Brownlee 
+# Master Machine Learning Algorithms, Jason Brownlee 
 
 ## Chapter-2
 
@@ -20,7 +20,7 @@ _Output = f(Input)_
    _OutputVariable = f(InputVector)_
 
 Statistics talk - _dependent_ and _independent_ variables
-   _DependentV ariable = f (IndependentV ariables)_
+   _DependentVariable = f (IndependentVariables)_
 
 **Common usage** 
 input variables - X
