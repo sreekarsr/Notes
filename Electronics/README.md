@@ -1,5 +1,8 @@
 # Electronics
 
+## NodeMCU
+- Check out the [NodeMCU](./NodeMCU) page for a detailed set of resources
+
 ## PWM
 - http://maxembedded.com/2011/08/avr-timers-pwm-mode-part-i/
 
