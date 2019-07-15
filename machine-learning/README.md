@@ -8,4 +8,4 @@
 ## Books
 - Master Machine Learning Algorithms, by Jason Brownlee
 <br> - [Notes available](./brownlee-notes.md)
-- Artificial Intelligence - A Modern Approach, Stuart J. Russell and Peter Morning
+- Artificial Intelligence - A Modern Approach, Stuart J. Russell and Peter Norvig
