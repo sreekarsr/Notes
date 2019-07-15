@@ -5,7 +5,7 @@ This repository contains information of links, books to refer to along with note
 
 ### Machine Learning
 - [Master Machine Learning Algorithms- notes][brownlee-notes]
-  Currently being updated is notes to the book, 'Master Machine Learning algorithms', by Jason Brownlee. This bok gives a quickstart to developers with a need to start working with machine learning and is in no way a complete description of in-depth theory.
+  Currently being updated is notes to the book, 'Master Machine Learning algorithms', by Jason Brownlee. This book gives a quickstart to developers with a need to start working with machine learning and is in no way a complete description of in-depth theory.
 
 [brownlee-notes]:https://github.com/sreekarsr/Notes/blob/master/machine-learning/brownlee-notes.md
 
