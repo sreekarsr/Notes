@@ -11,4 +11,4 @@
 - Artificial Intelligence - A Modern Approach, Stuart J. Russell and Peter Norvig
 
 ## Courses
-- [Machine Learning|Coursera](https://www.coursera.org/learn/machine-learning) by Andrew Ng
+- [Machine Learning | Coursera](https://www.coursera.org/learn/machine-learning) by Andrew Ng
