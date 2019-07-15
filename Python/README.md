@@ -8,3 +8,6 @@
 
 ## Pandas
 - http://pandas.pydata.org/
+
+## iPython
+- https://ipython.readthedocs.io/en/stable/index.html
