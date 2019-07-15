@@ -242,6 +242,88 @@ _The sweet spot_ - Just before the test set error starts to increase.
 Cross-validation - the GOLD standard. If avlbl, validation is useful.
 
 #       Part III - Linear Algorithms
+## Chapter- 8 Crash Course in Spreadsheet Math
+---
+
+## Chapter-9 Gradient Descent for ML
+### (9.1) Gradient Descent
+- used for: findinfg parameter values minimizing the cost fn. (when params can't be calc analytically)
+
+#### (9.1.1) Intuition
+- reaching the bottom of the bowl by moving in small steps along a decrease in cost function.
+
+#### (9.1.2) Gradient Descent Procedure
+- setup initial vals (0 or small random)
+- calculate the cost
+- calculate the derivative(cost) wrt coeffs - call delta
+- coefficient = coefficient - (alphaxdelta)
+^ repeat till reaching a small val
+### (9.2) Batch Gradient Descent
+- cost is calculated over entire dataset, for each iteration
+- most common
+### (9.3) Stochastic Gradient Descent
+- can be used when large amount of data is avlbl, and you want it to be computationally inexpensive.
+- the update is made only using each training instance, giving rise to a random walk(though slow)
+**Steps**
+- Order of dataset - randomized
+- update procedure with cost on one sample
+- go through the dataset several times before stopping
+- for large datasets, it is quite quick.
+
+### (9.4) Tips for gradient descent
+- Plot cost vs.time
+- Learning rate - try values
+- Rescale inputs - make them come in the same range
+- Few passes
+- Plot mean cost(over certain number of updates so that it doesn't look noisy)
+
+## Chapter-10 Linear Regression
+
+### (10.1)
+It is a method common to statistics and machine learning(borrowed)
+
+### (10.2) Many names
+- assumes y can be exp as linear comb of xs
+- simple linear reg- single variable. multiple - multiple input var
+- Different techniques: e.g.:ordinary least squares.
+
+### (10.3) LR Model Rep
+	_y = B0 + B1x_
+B0 - called intercept/bias coeff
+- **complexity** of a model - referred to number of coefficients in the model
+- a coeff becoming zero -> loss of dependence.
+### (10.4) Linear Regression Learning the Model
+We'll look at 4 techniques
+#### (10.4.2) Simple Linear Regression
+- single input -can be easily done using statistical properties like mean, stddev, corr, cov
+#### (10.4.2) Oridinary least Squares
+- more than one input - we try to minimize the sum of squared residuals.
+- treats data as a matrix and uses linear algebra opns to estimate optimal values.
+### (10.5) Gradient Descent
+- Optimizing process
+- useful when large dataset present(either in rows or columns - that may not fit in memory)
+#### (10.5.1) Regularized linear regression
+- extensions to the linear model.
+- seek to minimize both sum of squared error, AND, complexity of model.
+##### Most popular
+- **Lasso (L1 regularisation)** - modified to minimize also the absolute sum of coefficients.
+- **Ridge (L2 regularisation)** - to minimize also the squared absolute sum of coeff.
+
+### (10.6) Making Predictions with Linear Regression
+After finding the optimal coeff, plug in the values, to get the predicted values
+
+### (10.7) Preparing Data for linear Regression
+Some rules of thumb
+- Linear Assuption - transforming data to make the relationship linear(e.g. taking log for exponential rel)
+- Remove noise - data cleaning options - to remove outliers
+- Remove collinearity - prevent the input values from being highly correlated. Try calculating **pairwise correlations on the data and remove most correlated**
+- Gaussian Distributions - LR will make reliable predictions if input and output vars have a a Gaussian dist. (see log or BoxCox).
+- Rescale inputs - using standardization/normalization
+
+## Chapter-11 Simple Linear Regression Tutorial
+
+
+
 
 
 
