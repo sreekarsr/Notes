@@ -2,6 +2,10 @@
 This repository contains information of links, books to refer to along with notes I have made for the same for future reference
 
 ## Description of contents
+## Git
+Here's a great pdf to learn git: [progit]
+
+[progit]:Git/progit.pdf
 
 ### Machine Learning
 - [Master Machine Learning Algorithms- notes][brownlee-notes]
