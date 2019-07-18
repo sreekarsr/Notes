@@ -321,8 +321,36 @@ Some rules of thumb
 - Rescale inputs - using standardization/normalization
 
 ## Chapter-11 Simple Linear Regression Tutorial
+---
+## Chapter-12 Linear Regression Tutorial using gradient descent
+---
+## Chapter-13 Logistic Regression
 
+### (13.1) Logistic Function
+1/(1+e^-val)
+### (13.3) Representation used for Logistic Regression
+val = B0+B1x
+y = sigmoid(val)
+### (13.4) Logistic regression predicts probabilities
+it models the probability of the default class.
+P(X) = P(Y=1|X)
+**TERMS**
+- **odds** - ratio of probability of the event divided by the probability of the event not occuring
+- log(odds) = B0+B1X called **log-odds** or **probit**.
+The linear relationship is for the log-odds or the probit.
+### (13.4) Learning the Logistic Regression Model
+- Maximum likelihood estimation - we would like to drive the model to be closer to 1 when the corr output var is 1 and vice versa. Often implemented using optimization algos like **Quasi-Newton method**, though GD can still be used.
+### (13.5) Making Predicitions wit Logistiac regression
+^same as above eqns 
+### (13.6) Prepare data for logistic regression
+- Binary  output variable - intended fot binary(two-class) classification problems. Gives the probability of an instance belonging to the default class(0 or 1)
+- Remove noise (LR assumes no error in output var)
+- Gaussian distribution - **data transforms** of input var can better expose a linear relationship, and thus give a more accurate model. (e.g.: log, root, Box-Cox/ other univariate)
+- Remove correlated inputs (taking pairwise)
+- Fail to converge - if there are many highly correlated inputs(/sparse data)
 
+## Chapter-14 Logistic Regression Tutorial
+---
 
 
 
