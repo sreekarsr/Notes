@@ -8,6 +8,7 @@
 ## Books
 - Master Machine Learning Algorithms, by Jason Brownlee
 <br> - [Notes available](./brownlee-notes.md)
+<br> - [Code for tutorials](https://github.com/sreekarsr/ml-learn)
 - Artificial Intelligence - A Modern Approach, Stuart J. Russell and Peter Norvig
 
 ## Courses
