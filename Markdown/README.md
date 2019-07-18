@@ -7,6 +7,7 @@
 
 - [Github-flavoured markdown spec][gfm]
   The Markdown specification for gfm.
+- [Creating Github Pages from Markdown][github-pages-md]
 
 
 
@@ -14,3 +15,4 @@
 [grip-link]:https://github.com/joeyespo/grip 
 [grip-chsh]:https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 [gfm]:https://github.github.com/gfm/
+[github-pages-md]:https://nicolas-van.github.io/easy-markdown-to-github-pages/
