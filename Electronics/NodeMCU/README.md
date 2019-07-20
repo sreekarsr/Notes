@@ -10,7 +10,7 @@
 ## Setup instructions
 - [Getting Started][get-start] - Clear OS-based descriptions of options available (checkout the matrix) from the official documentation. You may want to use the two pages below to get a brief description. 
 - [Building and Flashing](./build-flash.md) the firmware onto your device.
-- [Setting up](./ide.md) your upload tool.
+- [Setting up](./uploader.md) your upload tool.
 
 [get-start]:https://nodemcu.readthedocs.io/en/master/getting-started/#getting-started-aka-nodemcu-quick-start
 
