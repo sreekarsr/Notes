@@ -8,17 +8,12 @@
 [dev-faq]:https://nodemcu.readthedocs.io/en/master/lua-developer-faq
 
 ## Setup instructions
-- [Setting up](./ide.md) your preferred IDE.
+- [Getting Started][get-start] - Clear OS-based descriptions of options available (checkout the matrix) from the official documentation. You may want to use the two pages below to get a brief description. 
 - [Building and Flashing](./build-flash.md) the firmware onto your device.
+- [Setting up](./ide.md) your upload tool.
+
+[get-start]:https://nodemcu.readthedocs.io/en/master/getting-started/#getting-started-aka-nodemcu-quick-start
 
 ## Tutorials
 - [ElectronicWings](http://www.electronicwings.com/nodemcu/basics)
  <br>  A good start covering the basics of using NodeMCU, with descriptions for peripherals. However, do not rely on its details only and use the official documentation for reference, with respect to firmware-building and uploading, as well as code. Certain code snippets are against the _event-driven_ approach that is required to program in when using NodeMCU.
-
-## Tools
-- [NodeMCU Build](https://nodemcu-build.com/) : A cloud-based service to build the NodeMCU Firmware.
-- [NodeMCU Firmware][firmware] :The source code for building the code on your own. It is recommended to learn this from the [NodeMCU documentation][build-doc] to customize your build.
-
-[firmware]:https://github.com/nodemcu/nodemcu-firmware
-[build-doc]:https://nodemcu.readthedocs.io/en/master/build/
- 
