@@ -13,7 +13,7 @@
 
 ## Tutorials
 - [ElectronicWings](http://www.electronicwings.com/nodemcu/basics)
- <br>  A good start covering the basics of using NodeMCU, with descriptions for peripherals. However, certain code snippets are against the _event-driven_ approach that is required to program in when using NodeMCU.
+ <br>  A good start covering the basics of using NodeMCU, with descriptions for peripherals. However, do not rely on its details only and use the official documentation for reference, with respect to firmware-building and uploading, as well as code. Certain code snippets are against the _event-driven_ approach that is required to program in when using NodeMCU.
 
 ## Tools
 - [NodeMCU Build](https://nodemcu-build.com/) : A cloud-based service to build the NodeMCU Firmware.
