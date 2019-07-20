@@ -5,9 +5,6 @@ This repository contains information of links, books to refer to along with note
 ## Git
 Here's a great pdf to learn git: [progit]
 
-
-Here's [Thomas calculus](https://drive.google.com/open?id=12sYgTfQ-XE6Y4gumylPHxi1W-annG2RS)
-
 [progit]:Git/progit.pdf
 
 ### Machine Learning
