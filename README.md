@@ -1,7 +1,15 @@
 # Notes and Resources
 This repository contains information of links, books to refer to along with notes I have made for the same for future reference
+## Cool resources
+- Pushing and pulling files to Google drive : [drive]
+
+[drive]:https://github.com/odeke-em/drive
 
 ## Description of contents
+### Git
+Here's a great pdf to learn git: [progit]
+
+[progit]:Git/progit.pdf
 
 ### Machine Learning
 - [Master Machine Learning Algorithms- notes][brownlee-notes]

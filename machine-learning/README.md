@@ -13,3 +13,8 @@
 
 ## Courses
 - [Machine Learning | Coursera](https://www.coursera.org/learn/machine-learning) by Andrew Ng
+
+## Math resources
+- Check out the [math page] to see resources to help understand certain mathematical concepts such as covariance matrices
+
+[math page]:../math/README.md
