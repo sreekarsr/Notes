@@ -351,10 +351,70 @@ The linear relationship is for the log-odds or the probit.
 
 ## Chapter-14 Logistic Regression Tutorial
 ---
+## Chapter-15 Linear Discriminant Analysis
+### (15.1) Limitations of Logistic regression
+- intended for 2-class
+- unstable with well-separated classes
+- unstable with few examples
+LDA is the go-to linear method for **multiclass classification**. (good to try both in case of binary classifiers also)
+### (15.2) Representation of LDA Models
+It uses **statistical properties of the data, calculated for _each class_**.
+For as _single input variable_, this is the **mean and the variance of the variable for each class**
+For _multiple variables_, this is the same properties calculated over the multivariate Gaussian, i.e., the **means and the covariance matrix(the multidimensional generalization of variance)**. These data are plugged into your LDA equation to make preditions.
+### (15.3) Learning LDA Models
+#### Assumptions made about data
+- That the data is **Gaussian** -i.e. each var is shaped like a bell curve when plotted
+- That each attribute has the _same variance_, that values of each variable vary around the mean by the same amount on average.
+**single variable case**
+- mean for each class is calculated (<i>mean<sub>k</sub></i>)
+- variance (sigma<sup>2</sup>) calculated for all classes.
+	= (1/(n-K))*sum((x<sub>i</sub> - mean)<sup>2</sup>)
+n - number of instances
+K- number of classes
 
+### (15.4) Making predictions with LDA
+LDA makes predictions by estimating the probablility that a new set of inputs belongs to each class. It uses **Bayes Theorem** to estimate the probabilities.
 
+	P(Y=k|X=x) = P(k)\*P(x|k)/sum(P(l)\*P(x|l))
 
+- P (Y = k|X = x) is the probability of the class Y = k given the input data x.
+- P (k) is the **base probability** of a given class k we are considering (Y = k), e.g. the ratio
+of instances with this class in the training dataset.
+- P (x|k) is the _estimated probability_(to be seen) of x belonging to the class k.
+- The denominator normalizes across for each class l, e.g. the probability of the class P (l)
+and the probability of the input given the class P (x|l)
 
+A **Gaussian distruibution function** can be used to extimate P(x|k). Plugging that in, (and discarding some terms)- we get the _discriminate function for class k_. It is calculated for each class, and the class with the largest discriminant will make the output classification.
+(see book pg 63 for expression)
 
+### (15.5) Preparing Data For LDA
+- intended for classification
+- Gaussian distribution(try using transforms)
+- Remove outliers (as they can skew the mean and stddev)
+- Same variance (assumed before using) - Good idea to standardize data so that it has **mean 0 and stddev 1**.
+### (15.6) Extensions to LDA
+- **Quadratic discriminant analysis**(each class uses its own estimate of variance(or cov))
+- Flexible DA - Where nonlinear comb on i/p is used e.g. splines
+- Regularized DA - introduces regularization into cov, moderating each variables influence.
+(other names that come under Fisher's DA, Multiple DA)
 
+## Chapter-16 LDA tutorial
 
+some notable points
+we subtract K degrees of freedom for the two class values/groups(details beyond this)
+---
+# PART IV - Nonlinear algorithms
+## Chapter-17 Classification and Regression Trees
+### (17.1) Decision trees
+- These can be used for classification or regression predictive modeling problems.
+- Called 'decision tree' or CART.
+- Is the foundation for bagged decision trees, random forest, boosted decision trees
+### (17.2) CART Model Representation
+Ordinary decision tree - e.g.: checking height, then weight to determine if male/female
+### (17.3) Making predictions
+Straightforward
+### (17.4) Learn a CART Model From Data
+- Dividing up the input space - using **binary splitting**
+- Split is tried at various locations..best split(lowest cost) is used
+- For regression, Cost func used: sum(squared error)
+- For classification - **Gini cost function** - gives an idea of how _pure_ the leaf nodes are.
