@@ -20,41 +20,46 @@ shows the commit history.
 </dd>
  
 <dt>git diff</dt> 
-<dd>shows difference between current working tree and the staging area.But if we use `git diff --staged` we will get the differences between the staging area and last 		commit. if we are comparing it with another branch
-		git diff <other-branch-name>
+<dd>shows difference between current working tree and the staging area. But using <code>git diff --staged </code>
+gets you the differences between the staging area and last commit. To compare it with another branch
+	<code>git diff &ltother-branch-name&gt </code>
 </dd>
 
 **git rm <filename>**
 	it removes the file from the directory as well as from the 		staging area
 
 
-UNDOING A WORKING TREE CHANGE
- 	we can replace changes we've made to a file in the working tree to the version it was in the staging area
-		git checkout -- <filename>
-UNDO STAGING OF FILES
-	to replace it back with the last commit
-		git reset HEAD <filename>
-RESTORE A FILE FROM A PREVIOUS COMMIT
-	if we had a file in an earlier commit but we want it back, then we use:
-		git checkout <commit-hash> -- <filename>
-	to see what are the commits that happened to a particular file, use
-		git log -- <filename>
-	this command (checkout) also stages this addition of the new file <filename>
+#### Undo a working tree change
+ we can replace changes we've made to a file in the working tree to the version it was in the staging area
+```	
+git checkout -- <filename>
+```
+#### Undo staging of files
+to replace it back with the last commit
+`git reset HEAD <filename>`
+#### Restore a file from a previous commit
+if we had a file in an earlier commit but we want it back, then we use:
+`git checkout <commit-hash> -- <filename>`
+to see what are the commits that happened to a particular file, use
+`git log -- <filename>`
+this command (checkout) also stages this addition of the new file <filename>
 
-.gitignore
-	a file with a list of things to not add(for eg. log files)
-	we can use wildcards in this case
-		*.txt - ignores all txt files
-	Here, * acts as a wildcard
-	ignoring a whole directory
-		<directory-name>/
+#### Ignoring files while adding to the staging area
+Use a **.gitignore** file
+a file with a list of things to not add(for eg. log files)
+we can use wildcards in this case
+`*.txt` - ignores all txt files
+Here, `*` acts as a wildcard
+ignoring a whole directory
+`<directory-name>/`
 	
 ### Git branching and merging
-git branch <branch-name>
-	creates a new branch at the location of HEAD
-git branch
-	just displays the list of branches
 
+<dt>git branch</dt>
+<dd>just displays the list of branches
+	<code>git branch <branch-name></code>
+	creates a new branch at the location of HEAD
+</dd>
 git checkout <branch-name>
 	moves the head to the <branch-name>
 
