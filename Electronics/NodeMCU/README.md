@@ -13,6 +13,8 @@
 - [Setting up](./uploader.md) your upload tool.
 
 [get-start]:https://nodemcu.readthedocs.io/en/master/getting-started/#getting-started-aka-nodemcu-quick-start
+## Useful links
+- Understanding errors from your esp8266- [blogpost]](https://riktronics.wordpress.com/2017/10/02/esp8266-error-messages-and-exceptions-explained/)
 
 ## Tutorials
 - [ElectronicWings](http://www.electronicwings.com/nodemcu/basics)
