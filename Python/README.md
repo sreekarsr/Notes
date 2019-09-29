@@ -8,6 +8,7 @@
 ## Virtual Environments
 
 Using virtual environments can be very useful in using two different versions of python(for different projects) in the same system without conflicts. [This page][virtualenv] has a very good introduction.
+
 [virtualenv]:https://realpython.com/python-virtual-environments-a-primer/#using-virtual-environments
 
 ## Visualisation
