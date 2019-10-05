@@ -184,6 +184,12 @@ then git merge to bring us up to speed.
 to see all branches, use git branch -a.
 To see only remote branches, use git branch -r
 
+### Removing a remote branch
+	git push <remote_name> --delete <branch_name>
+	This is to remove the remote branch after deleting your local branch as usual. Read this [stackoverflow post][remote-branch-del] for more.
+
+[remote-branch-del]:https://stackoverflow.com/questions/2003505/how-do-i-delete-a-git-branch-locally-and-remotely
+
 SEE MORE - amending commits, rebasing, and cherry-picking
 
 
