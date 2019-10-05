@@ -247,3 +247,7 @@ stage and commit = git commit -a -m "description"
 List local branches = git branch
 List remote branches = git branch -r
 List both local and remote branches = git branch -a
+
+## Github fundaes
+- [Closing issues using keywords](https://help.github.com/en/articles/closing-issues-using-keywords)
+- [Autolinked references and URLs](https://help.github.com/en/articles/autolinked-references-and-urls)
